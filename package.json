@@ -1,0 +1,39 @@
+{
+  "name": "portfolio-design",
+  "version": "1.0.0",
+  "description": "make a site with flexbox, gulp, normalize",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimaMelnichuk/portfolio-design.git"
+  },
+  "author": "Dima Melnichuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DimaMelnichuk/portfolio-design/issues"
+  },
+  "homepage": "https://github.com/DimaMelnichuk/portfolio-design#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "normalize.css": "^8.0.1"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "gulp-file-include": "^2.1.1",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "mixitup": "^3.3.1",
+    "owl.carousel": "^2.3.4",
+    "photoswipe": "^4.1.3",
+    "slick-carousel": "^1.8.1"
+  }
+}
