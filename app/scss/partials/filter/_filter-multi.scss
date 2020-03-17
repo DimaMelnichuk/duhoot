@@ -1,0 +1,49 @@
+.filer-multi {
+	display: flex;
+	align-items: center;
+	// .filer-multi__title
+
+	&__title {
+		text-transform: uppercase;
+	}
+
+	// .filer-multi__list
+
+	&__list {
+		display: flex;
+	}
+
+	// .filer-multi__item
+
+	&__item {
+	}
+
+	// .filer-multi__link
+
+	&__link {
+		display: block;
+		margin-left: 10px;
+		height: 40px;
+		width: 40px;
+		border-radius: 100%;
+		background-color: $icon-color;
+		line-height: 45px;
+		text-align: center;
+		transition: background-color .3s;
+	}
+}
+.link-agency--active:hover {
+	background-color: $green;
+}
+.link-festival--active:hover {
+	background-color: $orange;
+}
+.link-trans--active:hover {
+	background-color: $violet;
+}
+.link-person--active:hover {
+	background-color: $blue;
+}
+.link-education--active:hover {
+	background-color: $pink;
+}

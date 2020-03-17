@@ -1,0 +1,24 @@
+@import "../vars";
+
+.menu {
+
+	// .menu__list
+
+	&__list {
+		display: flex;
+	}
+
+	// .menu__link
+
+	&__link {
+		padding: 30px 19px;
+		color: $font-color;
+		text-transform: uppercase;
+		transition: color .3s, background .3s;
+
+		&:hover {
+			color: $white;
+			background: $font-color;
+		}
+	}
+}

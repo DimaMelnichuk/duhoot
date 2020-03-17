@@ -1,0 +1,19 @@
+.filter-sort {
+
+	// .filter-sort__item
+
+	&__item {
+		color: $font-color;
+		text-transform: uppercase;
+		margin-right: 25px;
+		transition: color .3s;
+
+		&:hover {
+			color: $red;
+		}
+
+		&--active {
+			color: $red;
+		}
+	}
+}

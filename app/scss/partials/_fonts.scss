@@ -26,16 +26,16 @@
 }
 
 @font-face {
-  font-family: 'icomoon';
-  src:  url('../../icomoon/fonts/icomoon.eot?xgdv6r');
-  src:  url('../../icomoon/fonts/icomoon.eot?xgdv6r#iefix') format('embedded-opentype'),
-    url('../../icomoon/fonts/icomoon.ttf?xgdv6r') format('truetype'),
-    url('../../icomoon/fonts/icomoon.woff?xgdv6r') format('woff'),
-    url('../../icomoon/fonts/icomoon.svg?xgdv6r#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
+	font-family: 'icomoon';
+	src:  url('../fonts/icomoon/icomoon.eot?makwmm');
+	src:  url('../fonts/icomoon/icomoon.eot?makwmm#iefix') format('embedded-opentype'),
+	  url('../fonts/icomoon/icomoon.ttf?makwmm') format('truetype'),
+	  url('../fonts/icomoon/icomoon.woff?makwmm') format('woff'),
+	  url('../fonts/icomoon/icomoon.svg?makwmm#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+ }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */

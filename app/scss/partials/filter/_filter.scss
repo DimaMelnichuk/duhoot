@@ -1,0 +1,12 @@
+.filter {
+	border-bottom: 1px solid #e2dee0;
+}
+
+.filter__inner {
+	display: flex;
+	justify-content: space-between;
+	height: 60px;
+	align-items: center;
+
+	color: $font-color;
+}

@@ -1,0 +1,19 @@
+.search-bg {
+	position: relative;
+	background: url(../../../img/search/search-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: $light-gray;
+	height: 370px;
+
+	&__overlay {
+		background-color: rgba(0,0,0, 0.7);
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+}
