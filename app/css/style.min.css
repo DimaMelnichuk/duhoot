@@ -366,7 +366,7 @@ form {
   margin-right: 10px;
 }
 
-.search-bg {
+.bg {
   position: relative;
   background: url(../../../img/search/search-bg.jpg);
   background-size: cover;
@@ -376,7 +376,7 @@ form {
   height: 370px;
 }
 
-.search-bg__overlay {
+.bg__overlay {
   background-color: rgba(0,0,0,0.7);
   position: absolute;
   left: 0;
@@ -545,6 +545,107 @@ input {
 
 .filter-sort__item--active {
   color: #E94E38;
+}
+
+.footer {
+  height: 500px;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.subscribe__title {
+  text-align: center;
+  font-size: 24px;
+  padding-top: 60px;
+  margin-bottom: 45px;
+}
+
+.subscribe__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.1);
+  border-radius: 35px;
+  width: 500px;
+  height: 60px;
+  border: 1px solid #646569;
+  outline: none;
+}
+
+.subscribe__input {
+  background: none;
+  border: none;
+  height: 60px;
+}
+
+.subscribe__btn {
+  height: 50px;
+  width: 120px;
+  font-size: 14px;
+  border-bottom: 2px solid #c1412e;
+  border-radius: 35px;
+  text-transform: uppercase;
+  background: #E94E38;
+  margin-right: 4px;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.line {
+  margin-bottom: 55px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #4a4a48;
+}
+
+.footer__title {
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #595551;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer__link {
+  color: #c0bebc;
+}
+
+.footer__link:hover {
+  color: #E94E38;
+}
+
+.footer-follow__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-follow__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer-follow__link i {
+  font-size: 35px;
+}
+
+.footer-follow__link i:hover {
+  color: #E94E38;
+}
+
+.footer-follow__copyright {
+  padding-top: 60px;
 }
 
 *,

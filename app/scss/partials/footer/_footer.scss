@@ -1,0 +1,18 @@
+.footer {
+	height: 500px;
+	// .footer__overlay
+
+	&__overlay {
+	}
+
+	// .footer__inner
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .footer__column
+	&__column {
+
+	}
+}
