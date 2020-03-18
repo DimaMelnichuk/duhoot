@@ -1,0 +1,19 @@
+.offer {
+	background-color: $bg-color;
+	text-align: center;
+	padding: 85px 0 140px;
+	// .offer__title
+
+	&__title {
+		margin-bottom: 10px;
+		font-size: 22px;
+		color: #566375;
+	}
+
+	// .offer__subtitle
+
+	&__subtitle {
+		color: #96a6a7;
+		margin-bottom: 70px;
+	}
+}
