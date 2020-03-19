@@ -1,0 +1,10 @@
+.posts {
+	background: #f3f1f2;
+	padding: 45px 0;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+}
