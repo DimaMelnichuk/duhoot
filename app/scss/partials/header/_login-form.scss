@@ -1,0 +1,88 @@
+@import "../vars";
+
+.login-form {
+	visibility: hidden;
+	
+	&.active {
+		visibility: visible;
+	}
+
+	// .login-form__inner
+	&__inner {
+		position: absolute;
+		max-width: 300px;
+		background: $white;
+		top: 75px;
+		right: 0;
+		color: #96a6a7;
+		padding: 15px;
+		display: flex;
+		flex-direction: column;
+
+		@media (max-width: 1000px) {
+			right: 45px;
+		}
+	
+		&::before {
+			content: '';
+			position: absolute;
+			right: 25px;
+			top: -10px;
+			border-left: 10px solid rgba(0, 0, 0, 0);
+			border-right: 10px solid rgba(0, 0, 0, 0);
+			border-bottom: 10px solid $white;
+		}
+	}
+
+	// .login-form__email
+	// .login-form__password
+	&__email,
+	&__password {
+		margin-bottom: 15px;
+		width: 100%;
+		border: 1px solid #DADADA;
+		color: #222;
+		background: #FFF;
+		padding: 6px;
+		outline: none;
+	}
+
+	// .login-form__checkbox
+	&__checkbox {
+		margin-right: 6px;
+	}
+
+	// .login-form__sing
+	&__sing {
+		display: flex;
+		margin-bottom: 15px;
+		align-items: center;
+	}
+
+	// .login-form__submit
+	&__submit {
+		background: #e94e38;
+		color: $white;
+		width: 33%;
+		border: none;
+		padding: 12px 12px;
+		margin-right: 12px;
+		cursor: pointer;
+		transition: background .3s;
+
+		&:hover {
+			background: #1db05e;
+		}
+	}
+
+	// .login-form__link
+	&__link {
+		color: #96a6a7;
+		
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+}
+

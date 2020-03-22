@@ -17,6 +17,7 @@
 
 	&__link i {
 		font-size: 35px;
+		color: $white;
 
 		&:hover {
 			color: $red;
@@ -25,5 +26,10 @@
 
 	&__copyright {
 		padding-top: 60px;
+
+		@media (max-width: 550px) {
+			padding-top: 30px;
+			font-size: 13px;
+		}
 	}
 }

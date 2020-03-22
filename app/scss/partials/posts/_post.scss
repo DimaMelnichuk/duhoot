@@ -9,6 +9,10 @@
 	}
 	&--big {
 		width: 455px;
+
+		@media (max-width: 550px) {
+			height: 315px;
+		}
 	}
 	// .post__img
 
@@ -31,6 +35,7 @@
 		font-size: 12px;
 		padding: 5px;
 		border-radius: 30px;
+		transition: opacity .3s;
 
 		&--green {
 			background: $green;
@@ -135,6 +140,10 @@
 		}
 		&--big {
 			left: 20px;
+
+			@media (max-width: 550px) {
+				left: 5px;
+			}
 		}
 
 		&--green {
@@ -186,4 +195,7 @@
 }
 .post:hover .post-rating__overlay{
 	transform: translateY(0);
+}
+.post:hover .post__price{
+	opacity: 0;
 }

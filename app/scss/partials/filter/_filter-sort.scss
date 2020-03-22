@@ -1,12 +1,31 @@
 .filter-sort {
 
+	&__list {
+		display: flex;
+
+		@media (max-width: 1000px) {
+			flex-direction: column;
+		}
+
+		@media (max-width: 800px) {
+			flex-direction: row;
+		}
+	}
 	// .filter-sort__item
 
 	&__item {
-		color: $font-color;
 		text-transform: uppercase;
 		margin-right: 25px;
 		transition: color .3s;
+
+		@media (max-width: 500px) {
+			font-size: 13px;
+			margin-right: 10px;
+		}
+	}
+
+	&__link {
+		color: $font-color;
 
 		&:hover {
 			color: $red;

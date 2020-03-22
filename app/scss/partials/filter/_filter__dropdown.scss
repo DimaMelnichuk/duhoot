@@ -1,0 +1,35 @@
+.filter__dropdown-inner {
+	display: flex;
+	justify-content: center;
+	max-width: 350px;
+	width: 100%;
+	margin: 0 -5px;
+
+	@media (max-width: 500px) {
+		font-size: 13px;
+	}
+}
+
+.filter__dropdown {
+	padding: 0 5px;
+
+	@media (max-width: 800px) {
+		width: 100%;
+	}
+
+	select{
+		background: rgba($white, 0.2);
+		color: #cad2d3;
+		font-size: 12px;
+		border-radius: 30px;
+		height: 35px;
+		border: 1px solid #cad2d3;
+		text-transform: uppercase;
+		padding-left: 10px;
+		outline: none;
+
+		@media (max-width: 800px) {
+			width: 100%;
+		}
+	}
+}

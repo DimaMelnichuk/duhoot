@@ -6,6 +6,10 @@
 		margin: 0 auto;
 		max-width: 800px;
 		margin-bottom: 35px;
+
+		@media (max-width: 500px) {
+			margin-bottom: 30px;
+		}
 	}
 
 	// .offer-slider__dots-item
@@ -19,6 +23,17 @@
 		justify-content: center;
 		align-items: center;
 		position: relative;
+
+		
+		@media (max-width: 850px) {
+			width: 80px;
+			height: 80px;
+		}
+
+		@media (max-width: 500px) {
+			width: 40px;
+			height: 40px;
+		}
 	}
 
 	&__dots-item::before {
@@ -29,6 +44,15 @@
 		position: absolute;
 		background-color: #e2dee0;
 		display: inline-block;
+
+		@media (max-width: 850px) {
+			width: 45px;
+			left: -65px;
+		}
+
+		@media (max-width: 820px) {
+			content: none;
+		}
 	}
 }
 

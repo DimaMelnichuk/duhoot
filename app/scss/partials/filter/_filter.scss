@@ -7,6 +7,16 @@
 	justify-content: space-between;
 	height: 60px;
 	align-items: center;
-
 	color: $font-color;
+	padding: 10px 0;
+
+	@media (max-width: 800px) {
+		height: 140px;
+		flex-direction: column;
+	}
+
+	@media (max-width: 500px) {
+		height: 120px;
+		flex-direction: column;
+	}
 }

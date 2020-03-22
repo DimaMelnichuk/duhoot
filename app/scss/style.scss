@@ -2,12 +2,13 @@
 @import "partials/libs";
 @import "partials/vars";
 @import "partials/fonts";
+@import "partials/bg";
 
 // header
 @import "partials/header/header";
 @import "partials/header/menu";
-@import "partials/header/search";
-@import "partials/header/login";
+@import "partials/header/header-btn";
+@import "partials/header/login-form";
 
 // search
 @import "partials/search/search";
@@ -19,11 +20,13 @@
 @import "partials/filter/filter-btn";
 @import "partials/filter/filter-multi";
 @import "partials/filter/filter-sort";
+@import "partials/filter/filter__dropdown";
 
 // posts
 @import "partials/posts/posts";
 @import "partials/posts/post";
 @import "partials/posts/post-rating";
+@import "partials/posts/posts__link";
 
 // offer
 @import "partials/offer/offer";
@@ -76,4 +79,25 @@ p {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+	color: $white;
+	transition: background .3s;
+}
+
+.form__btn {
+	position: relative;
+	box-shadow: 0 3px #c1412e;
+	background: $red;
+	border-radius: 30px;
+	text-transform: uppercase;
+	transition: top .3s;
+
+	&:hover {
+		top: 3px;
+		box-shadow: none;
+	}
 }

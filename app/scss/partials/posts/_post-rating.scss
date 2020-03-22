@@ -36,12 +36,20 @@
 	position: absolute;
 	bottom: 0;
 	left: 95px;
+
+	@media (max-width: 550px) {
+		left: 80px;
+	}
 }
 
 .post__content-title--wide {
 	color: $white;
 	font-size: 18px;
 	margin-right: 10px;
+
+	@media (max-width: 450px) {
+		font-size: 15px;
+	}
 }
 
 .post-rating--wide {
@@ -55,12 +63,20 @@
 	text-align: left;
 	color: #566375;
 	padding-left: 100px;
+
+	@media (max-width: 550px) {
+		padding-left: 80px;
+	}
 }
 
 .post__content-img {
 	position: absolute;
 	left: 20px;
 	top: 45px;
+
+	@media (max-width: 550px) {
+		left: 5px;
+	}
 }
 
 .post__content-name {

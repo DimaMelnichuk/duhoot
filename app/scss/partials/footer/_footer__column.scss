@@ -11,6 +11,10 @@
 	// .footer__list
 
 	&__list {
+
+		@media (max-width: 550px) {
+			margin-bottom: 25px;
+		}
 	}
 
 	// .footer__item

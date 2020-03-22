@@ -41,23 +41,48 @@
 				<!-- menu end -->
 				
 				<!-- form -->
-				<form action="" class="form">
-					<button class="form__search" type="submit"><i class="icon-search"></i></button>
-					<button class="form__login" type="submit"><i class="icon-user"></i>Login</button>
-				</form>
+				<div class="header-btn">
+					<input class="header-btn__search-input" type="text" placeholder="Search.." name="search">
+					<button class="header-btn__search" type="submit"><i class="header-btn__icon icon-search"></i></button>
+					<a class="header-btn__login"><i class="header-btn__icon icon-user"></i>Login</a>
+									<!-- login-form -->
+					<form class="login-form">
+						<div class="login-form__inner">
+							<label class="login-form__label">Email Address
+								<input class="login-form__email" type="email" required>
+							</label>
+							<label class="login-form__label">Password
+								<input class="login-form__password" type="password" required min="6" max="15">
+							</label class="login-form__label">
+							<div class="login-form__sing">
+								<input class="login-form__submit" type="submit" value="Sing in" required>
+								<div>
+									<label class="login-form__label">
+										<input class="login-form__checkbox" type="checkbox" name="" id="">Remember me
+									</label>
+								</div>
+							</div>
+							<a class="login-form__link" href="#">Forgot your password?</a>
+						</div>
+					</form>
+					<!-- login-form end -->
+				
+				</div>
 				<!-- form end -->
+
+				</div>
 			</div>
 		</div>
 	</header>
 	<!-- header end -->
 
 	<!-- search -->
-	<div class="search">
-		<div class="bg">
-			<div class="bg__overlay">
+	<div class="search bg">
+		<div class="bg__overlay">
+			<div class="container">
 				<div class="search__title">What are you looking for?</div>
 				<form action="" class="search-form">
-					<div class="search-form__dropbox">
+					<div class="search-form__dropdown">
 						<select id="cars">
 							<option value="volvo">Dubai</option>
 							<option value="saab">Saab</option>
@@ -65,14 +90,14 @@
 							<option value="audi">Audi</option>
 						</select>
 						<select id="cars">
-							<option value="volvo">Education</option>
+							<option value="volvo">Show map</option>
 							<option value="saab">Saab</option>
 							<option value="mercedes">Mercedes</option>
 							<option value="audi">Audi</option>
 						</select>
 					</div>
-					<input class="search-form__input--wide" type="text" placeholder="Keyword, name, date, ...">
-					<button class="search-btn">search</button>
+					<input class="search-form__input" type="text" placeholder="Keyword, name, date, ...">
+					<button class="search-form__btn form__btn">search</button>
 				</form>
 			</div>
 		</div>
@@ -83,48 +108,69 @@
 	<section class="filter">
 		<div class="container">
 			<div class="filter__inner">
+				<!-- filter-sort -->
 				<div class="filter-sort">
-					<a class="filter-sort__item filter-sort__item--active" href="">Recommended</a>
-					<a class="filter-sort__item" href="">latest</a>
-					<a class="filter-sort__item" href="">Highlights</a>           
+					<ul class="filter-sort__list">
+						<li class="filter-sort__item"><a class="filter-sort__link filter-sort__link--active" href="">Recommended</a></li>
+						<li class="filter-sort__item"><a class="filter-sort__link" href="">latest</a></li>
+						<li class="filter-sort__item"><a class="filter-sort__link" href="">Highlights</a> </li>
+					</ul>
 				</div>
-<!-- 				<div class="filter-btn">
-					<input type="text">
-					<input type="text">
-				</div> -->
+				<!-- filter-sort end -->
+				<!-- filter__dropdown -->
+				<div class="filter__dropdown-inner">
+					<div class="filter__dropdown">
+						<select id="cars">
+							<option value="volvo">Dubai</option>
+							<option value="saab">Saab</option>
+							<option value="mercedes">Mercedes</option>
+							<option value="audi">Audi</option>
+						</select>
+					</div>
+					<div class="filter__dropdown">
+						<select id="cars">
+							<option value="volvo">Dubai</option>
+							<option value="saab">Saab</option>
+							<option value="mercedes">Mercedes</option>
+							<option value="audi">Audi</option>
+						</select>
+					</div>
+				</div>
+				<!-- filter__dropdown end -->
+				<!-- filer-multi -->
 				<div class="filer-multi">
 					<div class="filer-multi__title">filter:</div>
 					<ul class="filer-multi__list">
 						<li class="filter-multi__item">
-							<a class="filer-multi__link link-agency--active" href="#">
+							<a class="filer-multi__link filer-multi__link--green active" href="#">
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="19" viewBox="0 0 24 19">
 									<image id="Vector_Smart_Object" data-name="Vector Smart Object" width="24" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAATCAYAAACKsM07AAABOUlEQVQ4je2ST0rDQBjFf1QRGlx4AA9QCXard2nBLuxtuuqmbooucgUP4U6xiOLGtRuhVCIiPBnyhY6ZTBJd++CF4Zv3Z2YIkrpyKOlR0pOtO/mCQYTnknJtkdsspu9csC8p84IvjCUy09R5WwtSSQ8WtJE08vZGNpNp0hp/Y8FE0rsF3Esa1GgGtifTTmo0QUFf0pX3BEubBUZPv/T0zpvECtyJVm0nitC/8cq/cWkYe4LXpjdtYGre8oDjsmCun8gaQtqYVbLmPWAKfAAzCnwRIgEOKkwC1dY7s8ypKzgFjoHrQF7gBFgDbxWuba8OLmvosneBOxMc1ggdjoAd4BPIbdYH9mzvJnAUeHbfXjCOY+E90SKqquA3BX/Cf0Er3F9UxZmxCy6NnW7wAmwatLeRdRUuw2UB8A3y0th8vAZm8wAAAABJRU5ErkJggg=="/>
 								</svg>
 							</a>
 						</li>
 						<li class="filter-multi__item">
-							<a class="filer-multi__link link-person--active" href="#">
+							<a class="filer-multi__link filer-multi__link--blue active" href="#">
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="19" viewBox="0 0 16 19">
 									<image id="Vector_Smart_Object" data-name="Vector Smart Object" width="16" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAATCAYAAACZZ43PAAABwElEQVQ4jY2UsUuVYRTGfzeuSShR0h8gWWAULdVSELRKgVBbGNJQY9EUtNaYNTc0KC3RGNHoJIhtgeSF0oYWSXAw1DJ+cfS5dLldwgcOvOc5z3O+7z3v+32o3TGiPlVb6s9EK9xIt74zaagP1S33sK7OJdbDbUXT6NVgKqJV9Zba31HrD7cazVR3g+spLKvDPbbVjuFojGe3QVP9ou6o5yI8rr7u0YBoSvu5vEWMp+NMh6i4NXVAvdGjyUw84weAMfbwir84CQwBl4HH/Iu2dqwJjCY5BCwDjZg3gBngKLDS0ULgQdajzYgLP4BF4Ga4Y0ArtbPAN2AtT98IP1Rb2EzyCTif4mHgDLCeOAEMpnYBWIpnswYynYFcUd+r13oMrXO476ItTBc5kWRBXVEXc7Td5oPqUu7BQjwTVRhUv4fYVGfVl2pfh7kZbjYa4xnYvdPAJeAUMAdcBe4CNZ9pYAe4DfwGXgBvgYvAR2C+3aAPeALcz7pwD/iVRsU9C1/cc+DR7jpf1pu81lf1Tu585xZqXVzVSlMoT6OKkyE+qEf+cwLtKE1pC5NFzCc5vQ9zO0pbmK9kO3+c/Zrb0VK3/wDabeNx8VN8ewAAAABJRU5ErkJggg=="/>
 								 </svg>								 
 							</a>
 						</li>
 						<li class="filter-multi__item">
-							<a class="filer-multi__link link-education--active" href="#">
+							<a class="filer-multi__link filer-multi__link--pink" href="#">
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="19" viewBox="0 0 29 19">
 									<image id="Vector_Smart_Object" data-name="Vector Smart Object" width="29" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAATCAYAAABsmQZ/AAACPklEQVRIiZ2VX2iPYRTHP5tJk7XkZiFtUW6QKJTaXO0GZXeM/ClpJVkuKG7sArlQRLtxs6VcKNzJBaW4QGoklvKnNDcra4kw2z56OdO75/e+4+dbp7f3ec75fs95nnN6UKuxeepBdVD9pF5Sl1fJQcVCiTWr59RRKzGp3lLb1ZqS+KpE29Qb6kQi9UDtU78m6y/VLnVuAdeMonPUvepAQjimXlHX5nwXqMfVocR3RD2rLingnybapPaowwnBcKw3FRGEzVa3qw+T2HH1mroxFV0RFYwlAVmle6LyIqEyW69eVX8kfE/Undm9U9Acd9XWEsJqbJF6JqrN41QtMMB0tAKHgJX8PxqBXcABYFaOZRyoI9q8Pdo+RVb1VrX2HyvMZvai+jnheaMeVu+r3WlQfzilI/I6ghoKhPJJT1akrV9ySd8rEj0fjs/VI+q7hOBT+CyNWeyK2cwjm93Lam+sjQZ3i/pNfVEm+jT+sww7IsM8JiOBPIZiZhdE7MlEdPeUb+1fWmUSuAlsAlYDfcB3oAZoCJ9HwA6gBTgNfKxg+Y0/WnUVW+V4BuwDjgH7gcVAf4hWhTLRZUA30AuMJXvDUdFMyMauI/at8EvudFvSge/VE/HKFI1I3urVTvVOctfXw2dL/H/79RQlWAdcADYk66/iKLPvCPADmA8sjJg1QH3OP7vbnjitieiDTuBtWdZZMllmWdZFszcTsjE7qjaWnUpRpSmySjYDbcAqoDnXuVm1H4DBOIXbwOPCe5wC8BPOzC+bt3fEEwAAAABJRU5ErkJggg=="/>
 								 </svg>								 
 							</a>
 						</li>
 						<li class="filter-multi__item">
-							<a class="filer-multi__link link-festival--active" href="#">
+							<a class="filer-multi__link filer-multi__link--orange" href="#">
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="19" viewBox="0 0 19 19">
 									<image id="Vector_Smart_Object" data-name="Vector Smart Object" width="19" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAABiUlEQVQ4jZ2TPUtcURCGn5UlNpaCBAyiSyxtDIgk5AfYKhEhNsmPsbO2EaxtLFKlCxhCmhgIKSwMRGORGAIp1vjtE0Zm4e7d67ruwNxz7zlz33lnzjs1lT5tDngJPAVGA6LeI07EzQMLwCzwEBjoiApmFT6gLqtv1J/qte12on5RV9Up9dwKkJa/K/18rH5SV9RGRfxFN7C/CbKtPiqd1dUFdVM9VK9aGe/q2Q7wC1gGXgBPgBGgVog5y+8HVayKzE4r+hUlf86SH2f8Xjdml7kOAk3gK/AWWAd+dETfcZvvk8XrirMqv2HWqZV2Zs2Oky52G1gvtgTsAsfAOPeYgKIFgQ/ATO5dtUj1w2w7gU6AV8BQyqPtAmJ8DtTLghwWS81u5H6M07A6nsIN26kXsj3L99OURNhwiVUj12vgIzCRgg1hP49sW4n8L5nEkP/JvekKGXwrCPhMXc9/bsqM2YrSxrKM/Qz83kVXofzJ8n48wgLwqJDxd/akF8G2gW0UGt5U11q07+XKf6ZIoGryM+clAAAAAElFTkSuQmCC"/>
 								 </svg>								 
 							</a>
 						</li>
 						<li class="filter-multi__item">
-							<a class="filer-multi__link link-trans--active" href="#">
+							<a class="filer-multi__link filer-multi__link--violet" href="#">
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="19" viewBox="0 0 18 19">
 									<image id="Vector_Smart_Object" data-name="Vector Smart Object" width="18" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAATCAYAAACdkl3yAAABf0lEQVQ4ja3UQYtOcRTH8c88PVlQFmISNU2zlYVIYqcUGZGXMLZ2yqt4rMbaK1DTRKMU2ZBooiRlw0iysCIa0nN0OLe5M/eZB/Gte7ud//md+7unc4+IaK7dETGIiFcRMYzNGVbOoDQ/9RN5w1EsYifeYBkfjWY7DmIKH3AWD7LQHjzDVlzENhzvyNdzF59xFV+wP23N10fMlc2lTT9qjaXKvVCR+XT0FkPMYbbz7vHcxDX0slA26Rb24RK+j5Wu0ccVPMepfoW/IQte76SPZ1BavbFpf8F/K9RvPWdvLjdW/4At7X62HZ3BKiZ+47RXOaul6Th6gRyFJzW9h/F6Q5FpPKqpP4BPoxwlOzCDXSXayHSdzVTuyB4lKzhRju51yvyKnS9HK+MKJXc6kfUsdCLZtJrsf6YZ82M4gsd4j9N4V+ukTa6P3BY3sBeH8BD3m6V2rv7ip62/f6G19JorY8li5Sap1SRMRsTtiPhahy8j4uSIQhnLsyRzUzMZEX4A4oxD4zb+5L8AAAAASUVORK5CYII="/>
 								 </svg>								 
@@ -132,6 +178,7 @@
 						</li>
 					</ul>
 				</div>
+				<!-- filer-multi end -->
 			</div>
 		</div>
 	</section>
@@ -163,7 +210,7 @@
 								<image id="Vector_Smart_Object" data-name="Vector Smart Object" width="24" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAATCAYAAACKsM07AAABOUlEQVQ4je2ST0rDQBjFf1QRGlx4AA9QCXard2nBLuxtuuqmbooucgUP4U6xiOLGtRuhVCIiPBnyhY6ZTBJd++CF4Zv3Z2YIkrpyKOlR0pOtO/mCQYTnknJtkdsspu9csC8p84IvjCUy09R5WwtSSQ8WtJE08vZGNpNp0hp/Y8FE0rsF3Esa1GgGtifTTmo0QUFf0pX3BEubBUZPv/T0zpvECtyJVm0nitC/8cq/cWkYe4LXpjdtYGre8oDjsmCun8gaQtqYVbLmPWAKfAAzCnwRIgEOKkwC1dY7s8ypKzgFjoHrQF7gBFgDbxWuba8OLmvosneBOxMc1ggdjoAd4BPIbdYH9mzvJnAUeHbfXjCOY+E90SKqquA3BX/Cf0Er3F9UxZmxCy6NnW7wAmwatLeRdRUuw2UB8A3y0th8vAZm8wAAAABJRU5ErkJggg=="/>
 							</svg>						 
 						</div>
-						<div class="post__content-descr">2 bedroom house for rent in Dubai</div>
+						<div class="post__content-descr"> 2 bedroom house for rent in Dubai</div>
 						<div class="post__content-title post__content-title--green">Vision Agency</div>
 						<ul class="post-rating">
 							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
@@ -621,6 +668,10 @@
 				</div>
 			</div>
 		</div>
+		<!-- container end -->
+		<div class="posts__btn">
+			<a class="posts__link" href="#">Load more</a><i class="posts__link-icon icon-long-arrow-right"></i>
+		</div>
 	</div>
 	<!-- posts end -->
 
@@ -756,8 +807,9 @@
 				<div class="subscribe">
 					<div class="subscribe__title">Subscribe to our newsletter</div>
 					<label class="subscribe__label">
+						<i class="subscribe__icon icon-envelope-o"></i>
 						<input class="subscribe__input" type="email" placeholder="your@email.com">
-						<button class="subscribe__btn">subscribe</button>
+						<button class="subscribe__btn form__btn">subscribe</button>
 					</label>
 				</div>
 

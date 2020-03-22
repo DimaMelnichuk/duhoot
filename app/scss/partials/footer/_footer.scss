@@ -1,5 +1,9 @@
 .footer {
 	height: 500px;
+
+	@media (max-width: 500px) {
+		height: 550px;
+	}
 	// .footer__overlay
 
 	&__overlay {
@@ -9,10 +13,16 @@
 	&__inner {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+
+		@media (max-width: 550px) {
+			justify-content: space-around;
+		}
 	}
 
 	// .footer__column
 	&__column {
-
+		padding: 0 15px;
 	}
 }
