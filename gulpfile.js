@@ -6,7 +6,7 @@ let gulp = require('gulp'),
 		rename = require('gulp-rename'),
 		del = require('del'),
 		autoprefixer = require('gulp-autoprefixer');
-		gcmq = require('gulp-group-css-media-queries');
+		sourcemaps = require('gulp-sourcemaps');
 
 	
 
@@ -16,12 +16,13 @@ gulp.task('clean', async function(){
 
 gulp.task('scss', function(){
 	return gulp.src('app/scss/**/*.scss')
+		.pipe(sourcemaps.init())
 		.pipe(sass({outputStyle: 'compressed'}))
 		.pipe(autoprefixer({
 			overrideBrowserslist: ['last 5 versions']
 		}))
 		.pipe(rename({suffix: '.min'}))
-		.pipe(gcmq())
+		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('app/css/'))
 		.pipe(browserSync.reload({stream: true}))
 });
