@@ -20,7 +20,7 @@
 	&__inner {
 		display: flex;
 		position: relative;
-		justify-content: space-between;
+		justify-content: center;
 		height: 75px;
 		align-items: center;	
 
@@ -33,4 +33,5 @@
 .logo {
 	position: relative;
 	z-index: 5;
+	margin-right: 40px;
 }

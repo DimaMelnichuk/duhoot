@@ -13,6 +13,7 @@
 
 	<!-- header -->
 	<header class="header">
+		<!-- container -->
 		<div class="container">
 			<div class="header__inner">
 				<!-- logo -->
@@ -31,11 +32,11 @@
 				</div>
 				<nav class="menu">
 					<ul class="menu__list">
-						<li class="menu__item"><a class="menu__link" href="index.html">Reality</a></li>
-						<li class="menu__item"><a class="menu__link" href="page-work.html">Living</a></li>
-						<li class="menu__item"><a class="menu__link" href="about.html">EduCation</a></li>
-						<li class="menu__item"><a class="menu__link" href="blog.html">Entertainment</a></li>
-						<li class="menu__item"><a class="menu__link" href="contact.html">Mobility</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Reality</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Living</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">EduCation</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Entertainment</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Mobility</a></li>
 					</ul>
 				</nav>
 				<!-- menu end -->
@@ -45,7 +46,8 @@
 					<input class="header-btn__search-input" type="text" placeholder="Search.." name="search">
 					<button class="header-btn__search" type="submit"><i class="header-btn__icon icon-search"></i></button>
 					<a class="header-btn__login"><i class="header-btn__icon icon-user"></i>Login</a>
-									<!-- login-form -->
+					
+					<!-- login-form -->
 					<form class="login-form">
 						<div class="login-form__inner">
 							<label class="login-form__label">Email Address
@@ -69,9 +71,8 @@
 				
 				</div>
 				<!-- form end -->
-
-				</div>
 			</div>
+			<!-- container -->
 		</div>
 	</header>
 	<!-- header end -->
@@ -79,27 +80,31 @@
 	<!-- search -->
 	<div class="search bg">
 		<div class="bg__overlay">
+			<!-- container -->
 			<div class="container">
 				<div class="search__title">What are you looking for?</div>
+				<!-- search-form -->
 				<form action="" class="search-form">
-					<div class="search-form__dropdown">
-						<select id="cars">
-							<option value="volvo">Dubai</option>
-							<option value="saab">Saab</option>
-							<option value="mercedes">Mercedes</option>
-							<option value="audi">Audi</option>
+					<div class="search-form__dropdowns">
+						<select class="search-form__select" id="place">
+							<option class="search-form__option" value="las-vegas">Las Vegas</option>
+							<option class="search-form__option" value="chicago">Chicago</option>
+							<option class="search-form__option" value="new-york">New York</option>
+							<option class="search-form__option" value="new-york">Los Angeles</option>
 						</select>
-						<select id="cars">
-							<option value="volvo">Show map</option>
-							<option value="saab">Saab</option>
-							<option value="mercedes">Mercedes</option>
-							<option value="audi">Audi</option>
+						<select class="search-form__select" id="category">
+							<option class="search-form__option" value="trans">Bus trans</option>
+							<option class="search-form__option" value="beach">Long Beach</option>
+							<option class="search-form__option" value="agency">Vision Agency</option>
+							<option class="search-form__option" value="music">Music Events</option>
 						</select>
 					</div>
 					<input class="search-form__input" type="text" placeholder="Keyword, name, date, ...">
-					<button class="search-form__btn form__btn">search</button>
+					<button class="search-form__btn btn">search</button>
 				</form>
+				<!-- search-form end -->
 			</div>
+			<!-- container end -->
 		</div>
 	</div>
 	<!-- search end -->
@@ -111,29 +116,22 @@
 				<!-- filter-sort -->
 				<div class="filter-sort">
 					<ul class="filter-sort__list">
-						<li class="filter-sort__item"><a class="filter-sort__link filter-sort__link--active" href="">Recommended</a></li>
-						<li class="filter-sort__item"><a class="filter-sort__link" href="">latest</a></li>
-						<li class="filter-sort__item"><a class="filter-sort__link" href="">Highlights</a> </li>
+						<li class="filter-sort__item"><a class="filter-sort__link filter-sort__link--active" href="#">Recommended</a></li>
+						<li class="filter-sort__item"><a class="filter-sort__link" href="#">latest</a></li>
+						<li class="filter-sort__item"><a class="filter-sort__link" href="#">Highlights</a> </li>
 					</ul>
 				</div>
 				<!-- filter-sort end -->
 				<!-- filter__dropdown -->
-				<div class="filter__dropdown-inner">
-					<div class="filter__dropdown">
-						<select id="cars">
-							<option value="volvo">Dubai</option>
-							<option value="saab">Saab</option>
-							<option value="mercedes">Mercedes</option>
-							<option value="audi">Audi</option>
+				<div class="filter-dropdown">
+					<div class="filter-dropdown__inner">
+						<select class="filter-dropdown__select" id="place">
+							<option class="filter-dropdown__option" value="las-vegas">Las Vegas</option>
+							<option class="filter-dropdown__option" value="chicago">Chicago</option>
+							<option class="filter-dropdown__option" value="new-york">New York</option>
+							<option class="filter-dropdown__option" value="new-york">Los Angeles</option>
 						</select>
-					</div>
-					<div class="filter__dropdown">
-						<select id="cars">
-							<option value="volvo">Dubai</option>
-							<option value="saab">Saab</option>
-							<option value="mercedes">Mercedes</option>
-							<option value="audi">Audi</option>
-						</select>
+						<button class="filter-dropdown__btn" value="show map">show map</button>
 					</div>
 				</div>
 				<!-- filter__dropdown end -->
@@ -782,7 +780,7 @@
 	<section class="offer">
 		<div class="container">
 			<div class="offer__title">What can DuHoot offer to you?</div>
-			<div class="offer__subtitle">Etiam cursus ipsum quis enim faucibus</div>
+			<div class="offer__subtitle">We're here to help you stay connected and move forward, together.</div>
 			
 			<!-- offer-slider__dots -->
 			<div class="offer-slider__dots">
@@ -828,68 +826,67 @@
 			<!-- offer-slider -->
 			<div class="offer-slider">
 				<div class="offer-slider__item">
-					<div class="offer-slider__title offer-slider__title--green">reality</div>
+					<div class="offer-slider__title offer-slider__title--green">REALITY AGENCY</div>
 					<div class="offer-slider__item-inner">
 						<div class="offer-slider__item-column">
 							<div class="offer-slider__item-icon"><i class="icon icon--green icon-leaf"></i></div>
-							<div class="offer-slider__item-text">Cum sociis natoque penatibus et magnis dis parturient montes, nCum sociis natoque penatibus et magnis dis parturient montes, nCum sociis natoque penatibus et magnis dis parturient montes, n</div>
+							<div class="offer-slider__item-text">Search over a million flights, hotels, packages and more</div>
 						</div>
 						<div class="offer-slider__item-column">
 							<div class="offer-slider__item-icon"><i class="icon icon--green icon-flash"></i></div>
-							<div class="offer-slider__item-text">Cum sociis natoque penatibus et magnis dis parturient montes, nCum sociis natoque penatibus et magnis dis parturient montes, nCum sociis natoque penatibus et magnis dis parturient montes, n</div>
+							<div class="offer-slider__item-text">No Expedia cancellation fee to change or cancel almost any hotel reservation</div>
 						</div>
 					</div>
 				</div>
-
 				<div class="offer-slider__item">
-					<div class="offer-slider__title offer-slider__title--blue">reality</div>
+					<div class="offer-slider__title offer-slider__title--blue">COMMUNICATIONS</div>
 					<div class="offer-slider__item-inner">
 						<div class="offer-slider__item-column">
 							<div class="offer-slider__item-icon"><i class="icon icon--blue icon-leaf"></i></div>
-							<div class="offer-slider__item-text">Cum sociis natoque penatibus et magnis dis parturient montes, nCum sociis natoque penatibus et magnis dis parturient montes, nCum sociis natoque penatibus et magnis dis parturient montes, n</div>
+							<div class="offer-slider__item-text">Great communication skills can be learned with Alison's free online Communication courses. While most people think that being able to express oneself effortlessly is an inherited skill, our training courses will prove otherwise.</div>
 						</div>
 						<div class="offer-slider__item-column">
 							<div class="offer-slider__item-icon"><i class="icon icon--blue icon-flash"></i></div>
-							<div class="offer-slider__item-text">Cum sociis natoque penatibus et magnis dis parturient montes, nCum sociis natoque penatibus et magnis dis parturient montes, nCum sociis natoque penatibus et magnis dis parturient montes, n</div>
+							<div class="offer-slider__item-text">Join our Introduction to Communication Skills classes so you can explore the basics of body language and the important contexts that affect communication.</div>
 						</div>
 					</div>
 				</div>
 				<div class="offer-slider__item">
-					<div class="offer-slider__title offer-slider__title--pink">reality</div>
+					<div class="offer-slider__title offer-slider__title--pink">EDUCATION</div>
 					<div class="offer-slider__item-inner">
 						<div class="offer-slider__item-column">
 							<div class="offer-slider__item-icon"><i class="icon icon--pink icon-leaf"></i></div>
-							<div class="offer-slider__item-text">Cum sociis natoque penatibus et magnis dis parturient montes, nCum sociis natoque penatibus et magnis dis parturient montes, nCum sociis natoque penatibus et magnis dis parturient montes, n</div>
+							<div class="offer-slider__item-text">Improve your knowledge of the English language and pronunciation and practice your speaking and vocabulary with our video lessons. Choose your English course level from the list below and start learning online today. Take any of our high quality online English lessons available 24/7 and improve your English speaking skills along with your grammar, reading and writing.</div>
 						</div>
 						<div class="offer-slider__item-column">
 							<div class="offer-slider__item-icon"><i class="icon icon--pink icon-flash"></i></div>
-							<div class="offer-slider__item-text">Cum sociis natoque penatibus et magnis dis parturient montes, nCum sociis natoque penatibus et magnis dis parturient montes, nCum sociis natoque penatibus et magnis dis parturient montes, n</div>
+							<div class="offer-slider__item-text">Change course at any time with our self-paced learning system. Your free Online English Course is ready for you now. No payment details required before or after registration.</div>
 						</div>
 					</div>
 				</div>
 				<div class="offer-slider__item">
-					<div class="offer-slider__title offer-slider__title--orange">reality</div>
+					<div class="offer-slider__title offer-slider__title--orange">MUSIC FESTIVALS</div>
 					<div class="offer-slider__item-inner">
 						<div class="offer-slider__item-column">
 							<div class="offer-slider__item-icon"><i class="icon icon--orange icon-leaf"></i></div>
-							<div class="offer-slider__item-text">Cum sociis natoque penatibus et magnis dis parturient montes, nCum sociis natoque penatibus et magnis dis parturient montes, nCum sociis natoque penatibus et magnis dis parturient montes, n</div>
+							<div class="offer-slider__item-text">Even if you kind of sort of hate music festivals, you can't help but love 'em. Where else can you spend a summer weekend seeing not one, not two, but a days-worth of live music from your favorite artists including both exciting, rising talents and some of the biggest acts today? so what are the must-see festivals this year in the US?</div>
 						</div>
 						<div class="offer-slider__item-column">
 							<div class="offer-slider__item-icon"><i class="icon icon--orange icon-flash"></i></div>
-							<div class="offer-slider__item-text">Cum sociis natoque penatibus et magnis dis parturient montes, nCum sociis natoque penatibus et magnis dis parturient montes, nCum sociis natoque penatibus et magnis dis parturient montes, n</div>
+							<div class="offer-slider__item-text">Here, you can to find our guide to the best 2020 music festivals, and who to see at each event. Continue to check back, as we'll keep updating this post as more lineups and dates are announced.</div>
 						</div>
 					</div>
 				</div>
 				<div class="offer-slider__item">
-					<div class="offer-slider__title offer-slider__title--violet">reality</div>
+					<div class="offer-slider__title offer-slider__title--violet">BUS TRANS</div>
 					<div class="offer-slider__item-inner">
 						<div class="offer-slider__item-column">
 							<div class="offer-slider__item-icon"><i class="icon icon--violet icon-leaf"></i></div>
-							<div class="offer-slider__item-text">Cum sociis natoque penatibus et magnis dis parturient montes, nCum sociis natoque penatibus et magnis dis parturient montes, nCum sociis natoque penatibus et magnis dis parturient montes, n</div>
+							<div class="offer-slider__item-text">We offer the industry’s best and most experienced drivers & tour guides.</div>
 						</div>
 						<div class="offer-slider__item-column">
 							<div class="offer-slider__item-icon"><i class="icon icon--violet icon-flash"></i></div>
-							<div class="offer-slider__item-text">Cum sociis natoque penatibus et magnis dis parturient montes, nCum sociis natoque penatibus et magnis dis parturient montes, nCum sociis natoque penatibus et magnis dis parturient montes, n</div>
+							<div class="offer-slider__item-text">We use a modern fleet of clean and comfortable buses.</div>
 						</div>
 					</div>
 				</div>
@@ -912,7 +909,7 @@
 					<label class="subscribe__label">
 						<i class="subscribe__icon icon-envelope-o"></i>
 						<input class="subscribe__input" type="email" placeholder="your@email.com">
-						<button class="subscribe__btn form__btn">subscribe</button>
+						<button class="subscribe__btn btn">subscribe</button>
 					</label>
 				</div>
 

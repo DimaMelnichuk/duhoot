@@ -42,15 +42,7 @@
 	}
 }
 
-.post__content-title--wide {
-	color: $white;
-	font-size: 18px;
-	margin-right: 10px;
 
-	@media (max-width: 450px) {
-		font-size: 15px;
-	}
-}
 
 .post-rating--wide {
 
@@ -59,15 +51,7 @@
 	}
 }
 
-.post__content--wide {
-	text-align: left;
-	color: #566375;
-	padding-left: 100px;
 
-	@media (max-width: 550px) {
-		padding-left: 80px;
-	}
-}
 
 .post__content-img {
 	position: absolute;

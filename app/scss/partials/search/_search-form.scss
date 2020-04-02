@@ -5,19 +5,24 @@
 	max-width: 480px;
 	margin: 0 auto;
 
-	&__dropdown {
+	&__dropdowns {
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
-
-		select {
-			width: 222px;
-		}
 	
 		@media (max-width: 530px) {
 			flex-direction: column;
 			align-items: center;
 		}
+	}
+
+	&__select {
+		width: 222px;
+	}
+
+	&__option {
+		background: #E94E38;
+		color: #fff;
 	}
 
 	&__input {
@@ -43,9 +48,7 @@
 }
 
 
-
-
-.search-form__dropdown select,
+.search-form__select,
 .search-form__input {
 	background: transparent;
 	color: $white;
@@ -65,11 +68,3 @@
 }
 
 
-::placeholder {
-	color: $white;
-}
-
-option {
-	background: #E94E38;
-	color: #fff;
-}

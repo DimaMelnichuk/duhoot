@@ -4,6 +4,7 @@
 @import "partials/fonts";
 @import "partials/bg";
 
+
 // header
 @import "partials/header/header";
 @import "partials/header/menu";
@@ -94,7 +95,7 @@ button {
 	transition: background .3s;
 }
 
-.form__btn {
+.btn {
 	position: relative;
 	box-shadow: 0 3px #c1412e;
 	background: $red;
@@ -106,4 +107,8 @@ button {
 		top: 3px;
 		box-shadow: none;
 	}
+}
+
+::placeholder {
+	color: $white;
 }
