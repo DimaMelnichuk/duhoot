@@ -25,10 +25,18 @@
 		margin: 0 5px;
 	}
 
-	&__btn::after {
-		content: "\f002";
-		font-family: 'icomoon';
-		margin: 0 8px;
+	&__btn {
+
+		&:hover {
+			color: $white;
+			background: $green;
+		}
+
+		&::after {
+			content: "\f002";
+			font-family: 'icomoon';
+			margin: 0 8px;
+		}
 	}
 
 	&__option {

@@ -31,5 +31,9 @@
 			padding-top: 30px;
 			font-size: 13px;
 		}
+
+		@media (max-width: 490px) {
+			padding-top: 15px;
+		}
 	}
 }

@@ -6,6 +6,10 @@
 		text-transform: capitalize;
 		margin-bottom: 25px;
 		border-bottom: 1px solid #595551;
+
+		@media (max-width: 490px) {
+			margin-bottom: 15px;
+		}
 	}
 
 	// .footer__list
@@ -27,6 +31,7 @@
 
 	&__link {
 		color: #c0bebc;
+		text-transform: capitalize;
 
 		&:hover {
 			color: $red;

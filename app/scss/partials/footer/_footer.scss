@@ -1,14 +1,6 @@
 .footer {
 	height: 500px;
 
-	@media (max-width: 500px) {
-		height: 550px;
-	}
-	// .footer__overlay
-
-	&__overlay {
-	}
-
 	// .footer__inner
 	&__inner {
 		display: flex;

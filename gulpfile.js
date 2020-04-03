@@ -8,7 +8,6 @@ let gulp = require('gulp'),
 		autoprefixer = require('gulp-autoprefixer');
 		sourcemaps = require('gulp-sourcemaps');
 
-	
 
 gulp.task('clean', async function(){
 	del.sync('dist')

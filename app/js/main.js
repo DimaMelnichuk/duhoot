@@ -6,7 +6,7 @@ $(function(){
 		asNavFor: ".offer-slider__dots",
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		/* autoplay: true, */
+		autoplay: true,
   		autoplaySpeed: 4000,
 	 });
 
