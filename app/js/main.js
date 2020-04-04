@@ -32,10 +32,10 @@ $(function(){
 
 	$(document).mouseup(function (e){ // событие клика по странице
 		if (!$(".header-btn__login").is(e.target) && // если клик сделан не по элементу
-			 $(".login-form").has(e.target).length === 0) { // если клик сделан не по вложенным элементам
-			 $(".login-form").removeClass('active'); // скрываем блок
+				$(".login-form").has(e.target).length === 0) { // если клик сделан не по вложенным элементам
+				$(".login-form").removeClass('active'); // скрываем блок
 		}
-  });
+   });
 
 /***************** Search-form ********************/
   $(".header-btn__search").click(function(event){

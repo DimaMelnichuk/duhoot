@@ -237,6 +237,42 @@
 			font-size: 15px;
 		}
 	}
+
+	&__content-name {
+		font-size: 16px;
+		text-transform: uppercase;
+		margin-bottom: 8px;
+	}
+
+	&__content-text {
+		font-size: 14px;
+		line-height: 19px;
+	}
+
+	&__content-link {
+		text-decoration: underline;
+	}
+
+	&__img-content {
+		display: flex;
+		position: absolute;
+		bottom: 0;
+		left: 95px;
+	
+		@media (max-width: 550px) {
+			left: 80px;
+		}
+	}
+	
+	&__content-img {
+		position: absolute;
+		left: 20px;
+		top: 45px;
+	
+		@media (max-width: 550px) {
+			left: 5px;
+		}
+	}
 }
 
 

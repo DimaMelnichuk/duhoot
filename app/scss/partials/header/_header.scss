@@ -20,7 +20,7 @@
 	&__inner {
 		display: flex;
 		position: relative;
-		justify-content: center;
+		justify-content: space-between;
 		height: 75px;
 		align-items: center;	
 
@@ -29,10 +29,9 @@
 			justify-content: space-between;
 		}
 	}
-}
 
-.logo {
-	position: relative;
-	z-index: 5;
-	margin-right: 40px;
+	&__logo {
+		position: relative;
+		z-index: 5;
+	}
 }

@@ -1,5 +1,3 @@
-@import "../vars";
-
 .header-btn {
 	display: flex;
 	position: relataive;
@@ -80,8 +78,9 @@
 			background: #DB1A00;
 		}
 
-		i {
-			margin-right: 10px;
-		}
+	}
+
+	&__icon-login {
+		margin-right: 10px;
 	}
 }

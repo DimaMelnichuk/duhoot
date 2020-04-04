@@ -14,12 +14,10 @@
 
 // search
 @import "partials/search/search";
-@import "partials/search/search-bg";
 @import "partials/search/search-form";
 
 // filter
 @import "partials/filter/filter";
-@import "partials/filter/filter-btn";
 @import "partials/filter/filter-multi";
 @import "partials/filter/filter-sort";
 @import "partials/filter/filter__dropdown";
@@ -78,15 +76,23 @@ p {
 }
 
 .container {
-	max-width: 1000px;
+	max-width: 1300px;
 	margin: 0 auto;
 	padding: 0 15px;
+
+	@media (max-width: 1366px) {
+		max-width: 1150px;
+	}
 }
 
 .container__posts {
-	max-width: 970px;
+	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
+
+	@media (max-width: 1366px) {
+		max-width: 1050px;
+	}
 }
 
 button {

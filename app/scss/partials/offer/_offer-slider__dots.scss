@@ -3,8 +3,6 @@
 	// .offer-slider__dots
 
 	&__dots {
-		margin: 0 auto;
-		max-width: 800px;
 		margin-bottom: 35px;
 
 		@media (max-width: 500px) {
@@ -15,6 +13,7 @@
 	// .offer-slider__dots-item
 
 	&__dots-item {
+		margin: 0 auto;
 		width: 100px;
 		height: 100px;
 		border-radius: 100%;
@@ -35,26 +34,17 @@
 			height: 40px;
 		}
 	}
+}
 
-	&__dots-item::before {
-		content: "";
-		height: 3px;
-		width: 50px;
-		left: -55px;
-		position: absolute;
-		background-color: #e2dee0;
-		display: inline-block;
-
-		@media (max-width: 850px) {
-			width: 45px;
-			left: -65px;
-		}
-
-		@media (max-width: 820px) {
+.offer-slider__dots {
+	.offer-slider__dots-box{
+		.offer-slider__dots-item::after {
 			content: none;
+			display: none;
 		}
 	}
 }
+
 
 .offer-slider__dots {
 	.slick-current {
@@ -83,24 +73,80 @@
 .offer-slider__dots {
 	.slick-current {
 
-		.hotels-big {
-			background-position: -0px -104px; width: 50px; height: 40px;
+		.hotels-gray-bg {
+			background-position: -0px -64px; width: 50px; height: 40px;
+
+			@media (max-width: 500px) {
+				background-position: -24px -522px; width: 24px; height: 19px;
+			}
 		}
 
-		.education-big {
-			background-position: -0px -32px; width: 50px; height: 32px;
+		.education-gray-bg {
+			background-position: -0px -0px; width: 50px; height: 32px;
+
+			@media (max-width: 500px) {
+				background-position: -0px -439px; width: 29px; height: 19px;
+			}
 		}
 
-		.community-big {
-			background-position: -0px -371px; width: 38px; height: 45px;
+		.community-gray-bg {
+			background-position: -0px -326px; width: 38px; height: 45px;
+
+			@media (max-width: 500px) {
+				background-position: -18px -560px; width: 16px; height: 19px;
+			}
 		}
 
-		.music-big {
-			background-position: -0px -189px; width: 45px; height: 45px;
+		.music-gray-bg {
+			background-position: -0px -144px; width: 45px; height: 45px;
+
+			@media (max-width: 500px) {
+				background-position: -30px -416px; width: 19px; height: 19px;
+			}
 		}
 
-		.bus-big {
-			background-position: -0px -280px; width: 43px; height: 46px;
+		.bus-gray-bg {
+			background-position: -0px -234px; width: 43px; height: 46px;
+
+			@media (max-width: 500px) {
+				background-position: -29px -473px; width: 18px; height: 19px;
+			}
 		}
+	}
+}
+
+.education-gray-bg { 
+	background-position: -0px -32px; width: 50px; height: 32px;
+
+	@media (max-width: 500px) {
+		background-position: -0px -458px; width: 29px; height: 19px;
+	}
+}
+.hotels-gray-bg { 
+	background-position: -0px -104px; width: 50px; height: 40px;
+	
+	@media (max-width: 500px) {
+		background-position: -0px -522px; width: 24px; height: 19px;
+	}
+}
+.music-gray-bg { 
+	background-position: -0px -189px; width: 45px; height: 45px;
+	
+	@media (max-width: 500px) {
+		background-position: -30px -435px; width: 19px; height: 19px;
+	}
+}
+.bus-gray-bg { 
+	background-position: -0px -280px; width: 43px; height: 46px;
+	
+	@media (max-width: 500px) {
+		background-position: -24px -541px; width: 18px; height: 19px;
+	}
+}
+.community-gray-bg { 
+	background-position: -0px -371px; width: 38px; height: 45px;
+	
+	@media (max-width: 500px) {
+		background-position: -34px -560px; width: 16px; height: 19px;
 	}
 }

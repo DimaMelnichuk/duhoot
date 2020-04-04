@@ -16,6 +16,25 @@
 		}
 	}
 
+	&__select,
+	&__input {
+		background: transparent;
+		color: $white;
+		font-size: 17px;
+		border-radius: 30px;
+		height: 57px;
+		border: 1px solid #585553;
+		padding: 0 30px;
+		outline: none;
+		margin-bottom: 20px;
+	
+		@media (max-width: 530px) {
+			font-size: 15px;
+			padding: 0 18px;
+			height: 45px;
+		}
+	}
+
 	&__select {
 		width: 222px;
 	}
@@ -44,26 +63,6 @@
 			font-size: 15px;
 			height: 43px;
 		}
-	}
-}
-
-
-.search-form__select,
-.search-form__input {
-	background: transparent;
-	color: $white;
-	font-size: 17px;
-	border-radius: 30px;
-	height: 57px;
-	border: 1px solid #585553;
-	padding: 0 30px;
-	outline: none;
-	margin-bottom: 20px;
-
-	@media (max-width: 530px) {
-		font-size: 15px;
-		padding: 0 18px;
-		height: 45px;
 	}
 }
 
