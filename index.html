@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+	<meta charset=utf-8>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Duhoot</title>
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="css/style.min.css" />
+</head>
+<body>
+
+	<!-- header -->
+	<header class="header">
+		<!-- container -->
+		<div class="container">
+			<div class="header__inner">
+				<!-- logo -->
+				<a class="header__logo" href="#">
+					<img class="header__logo-img" src="img/header/logo.png" alt="">
+				</a>
+				<!-- logo end -->
+
+				<!-- menu -->
+				<div class="menu__burger">
+					<span></span>
+				</div>
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__item"><a class="menu__link" href="#">Reality</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Living</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">EduCation</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Entertainment</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Mobility</a></li>
+					</ul>
+				</nav>
+				<!-- menu end -->
+				
+				<!-- form -->
+				<div class="header-btn">
+					<input class="header-btn__search-input" type="text" placeholder="Search.." name="search">
+					<button class="header-btn__search" type="submit"><i class="header-btn__icon icon-search"></i></button>
+					<a class="header-btn__login"><i class="header-btn__icon-login icon-user"></i>Login</a>
+					
+					<!-- login-form -->
+					<form class="login-form">
+						<div class="login-form__inner">
+							<label class="login-form__label">Email Address
+								<input class="login-form__email" type="email" required>
+							</label>
+							<label class="login-form__label">Password
+								<input class="login-form__password" type="password" required>
+							</label>
+							<div class="login-form__sing">
+								<input class="login-form__submit" type="submit" value="Sing in">
+								<div>
+									<label class="login-form__label">
+										<input class="login-form__checkbox" type="checkbox">Remember me
+									</label>
+								</div>
+							</div>
+							<a class="login-form__link" href="#">Forgot your password?</a>
+						</div>
+					</form>
+					<!-- login-form end -->
+				
+				</div>
+				<!-- form end -->
+			</div>
+			<!-- container -->
+		</div>
+	</header>
+	<!-- header end -->
+
+	<!-- search -->
+	<div class="search bg">
+		<div class="bg__overlay">
+			<!-- container -->
+			<div class="container">
+				<div class="search__title">What are you looking for?</div>
+				<!-- search-form -->
+				<form action="" class="search-form">
+					<div class="search-form__dropdowns">
+						<select class="search-form__select" id="place">
+							<option class="search-form__option" value="las-vegas">Las Vegas</option>
+							<option class="search-form__option" value="chicago">Chicago</option>
+							<option class="search-form__option" value="new-york">New York</option>
+							<option class="search-form__option" value="new-york">Los Angeles</option>
+						</select>
+						<select class="search-form__select" id="category">
+							<option class="search-form__option" value="trans">Bus trans</option>
+							<option class="search-form__option" value="beach">Long Beach</option>
+							<option class="search-form__option" value="agency">Vision Agency</option>
+							<option class="search-form__option" value="music">Music Events</option>
+						</select>
+					</div>
+					<input class="search-form__input" type="text" placeholder="Keyword, name, date, ...">
+					<button class="search-form__btn btn">search</button>
+				</form>
+				<!-- search-form end -->
+			</div>
+			<!-- container end -->
+		</div>
+	</div>
+	<!-- search end -->
+
+	<!-- filter -->
+	<section class="filter">
+		<div class="container">
+			<div class="filter__inner">
+				<!-- filter-sort -->
+				<div class="filter-sort">
+					<ul class="filter-sort__list">
+						<li class="filter-sort__item"><a class="filter-sort__link filter-sort__link--active" href="#">Recommended</a></li>
+						<li class="filter-sort__item"><a class="filter-sort__link" href="#">latest</a></li>
+						<li class="filter-sort__item"><a class="filter-sort__link" href="#">Highlights</a> </li>
+					</ul>
+				</div>
+				<!-- filter-sort end -->
+				<!-- filter__dropdown -->
+				<div class="filter-dropdown">
+					<div class="filter-dropdown__inner">
+						<select class="filter-dropdown__select" id="country">
+							<option class="filter-dropdown__option" value="las-vegas">Las Vegas</option>
+							<option class="filter-dropdown__option" value="chicago">Chicago</option>
+							<option class="filter-dropdown__option" value="new-york">New York</option>
+							<option class="filter-dropdown__option" value="new-york">Los Angeles</option>
+						</select>
+						<button class="filter-dropdown__btn" value="show map">show map</button>
+					</div>
+				</div>
+				<!-- filter__dropdown end -->
+				<!-- filer-multi -->
+				<div class="filer-multi">
+					<div class="filer-multi__title">filter:</div>
+					<ul class="filer-multi__list">
+						<li class="filter-multi__item">
+							<a class="filer-multi__link filer-multi__link--green green-active" href="#">
+								<div class="hotels-white-sm"></div>
+							</a>
+						</li>
+						<li class="filter-multi__item">
+							<a class="filer-multi__link filer-multi__link--blue" href="#">
+								<div class="education-white-sm"></div>					 
+							</a>
+						</li>
+						<li class="filter-multi__item">
+							<a class="filer-multi__link filer-multi__link--pink" href="#">
+								<div class="community-white-sm"></div>									 
+							</a>
+						</li>
+						<li class="filter-multi__item">
+							<a class="filer-multi__link filer-multi__link--orange orange-active" href="#">
+								<div class="music-white-sm"></div>								 
+							</a>
+						</li>
+						<li class="filter-multi__item">
+							<a class="filer-multi__link filer-multi__link--violet violet-active" href="#">
+								<div class="bus-white-sm"></div>								 
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- filer-multi end -->
+			</div>
+		</div>
+	</section>
+	<!-- filter end -->
+
+	<!-- posts -->
+	<div class="posts">
+		<div class="container__posts">
+			<div class="posts__inner">
+
+				<div class="post post--small">
+					<div class="post__img">
+						<img src="img/posts/65b21971_z.webp" alt="">
+						<span class="post__price post__price--green">$50</span>
+						<div class="post__overlay post__overlay--green">
+							<a class="post__overlay-link post__overlay-link--green" href="#"><i class="icon-search"></i>show more</a>
+							<ul class="post-rating post-rating__overlay">
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><span><i class="post-rating__icon post-rating__icon--white icon-comments-o"></i></span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="post__content post__content--green">
+						<div class="post__content-icon post__content-icon--small post__content-icon--green">
+							<div class="hotels-white-md"></div>
+						</div>
+						<div class="post__content-descr">Motel 6 Chicago West - Villa Park</div>
+						<div class="post__content-title post__content-title--green">Vision Agency</div>
+						<ul class="post-rating">
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star-o"></i></li>
+							<li class="post-rating__item"><span>(365)</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="post post--small">
+					<div class="post__img">
+						<img src="img/posts/Top15FestivalsUSA_EDCLasVegas.jpg" alt="">
+						<span class="post__price post__price--orange">$3.990</span>
+						<div class="post__overlay post__overlay--orange">
+							<a class="post__overlay-link post__overlay-link--orange" href="#"><i class="icon-search"></i>show more</a>
+							<ul class="post-rating post-rating__overlay post-rating__overlay--orange">
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><span><i class="post-rating__icon post-rating__icon--white icon-comments-o"></i></span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="post__content post__content--orange">
+						<div class="post__content-icon post__content-icon--small post__content-icon--orange">
+							<div class="music-white-md"></div>												  
+						</div>
+						<div class="post__content-descr">Electric Daisy Carnival Las Vegas</div>
+						<div class="post__content-title post__content-title--orange">Las Vegas, Nevada</div>
+						<ul class="post-rating">
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star-o"></i></li>
+							<li class="post-rating__item"><span>(365)</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="post post--small">
+					<div class="post__img">
+						<img src="img/posts/03.jpg" alt="">
+						<span class="post__price post__price--violet">$130.95</span>
+						<div class="post__overlay post__overlay--violet">
+							<a class="post__overlay-link post__overlay-link--violet" href="#"><i class="icon-search"></i>show more</a>
+							<ul class="post-rating post-rating__overlay">
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><span><i class="post-rating__icon post-rating__icon--white icon-comments-o"></i></span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="post__content post__content--violet">
+						<div class="post__content-icon post__content-icon--small post__content-icon--violet">
+							<div class="bus-white-md"></div>												  
+						</div>
+						<div class="post__content-descr">Gray Line of Buffalo</div>
+						<div class="post__content-title post__content-title--violet">bus trans</div>
+						<ul class="post-rating">
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star-o"></i></li>
+							<li class="post-rating__item"><span>(84)</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="post post--small">
+					<div class="post__img">
+						<img src="img/posts/48.jpg" alt="">
+						<span class="post__price post__price--violet">$77.93</span>
+						<div class="post__overlay post__overlay--violet">
+							<a class="post__overlay-link post__overlay-link--violet" href="#"><i class="icon-search"></i>show more</a>
+							<ul class="post-rating post-rating__overlay">
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><span><i class="post-rating__icon post-rating__icon--white icon-comments-o"></i></span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="post__content post__content--violet">
+						<div class="post__content-icon post__content-icon--small post__content-icon--violet">
+							<div class="bus-white-md"></div>												  
+						</div>
+						<div class="post__content-descr">Award Winning Red Rock Canyon Tour</div>
+						<div class="post__content-title post__content-title--violet">bus trans</div>
+						<ul class="post-rating">
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star-o"></i></li>
+							<li class="post-rating__item"><span>(145)</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="post post--big">
+					<div class="post__img">
+						<img src="img/posts/8f51ddc1_z.webp" alt="">
+						<div class="post__img-content">
+							<div class="post__content-title post__content-title--wide post__content-title--green">Motel 6 Prospect Heights, IL</div>
+						</div>
+						<div class="post__overlay post__overlay--green">
+							<a class="post__overlay-link post__overlay-link--green" href="#"><i class="icon-search"></i>show more</a>
+							<ul class="post-rating post-rating__overlay">
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><span><i class="post-rating__icon post-rating__icon--white icon-comments-o"></i></span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="post__content post__content--wide post__content--green">
+						<div class="post__content-icon post__content-icon--big post__content-icon--green">
+							<div class="hotels-white-md"></div>
+						</div>
+						<div class="post__content-img">
+							<img src="img/posts/post__img-person_1.png" alt="">
+						</div>
+						<ul class="post-rating post-rating__content--wide">
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star-o"></i></li>
+							<li class="post-rating__item"><span>(506)</span></li>
+						</ul>
+						<div class="post__content-name">10.0 Exceptional</div>
+						<div class="post__content-text">The property needs a microwave and toiletries. It not good eating food that needs to be heated up and <a class="post__content-link" href="#">...read more</a></div>
+					</div>
+				</div>
+
+				<div class="post post--big">
+					<div class="post__img">
+						<img src="img/posts/9fcd39e6_z.webp" alt="">
+						<div class="post__img-content">
+							<div class="post__content-title post__content-title--wide post__content-title--green">Hampton Inn Chicago Downtown</div>
+						</div>
+						<div class="post__overlay post__overlay--green">
+							<a class="post__overlay-link post__overlay-link--green" href="#"><i class="icon-search"></i>show more</a>
+							<ul class="post-rating post-rating__overlay">
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><span><i class="post-rating__icon post-rating__icon--white icon-comments-o"></i></span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="post__content post__content--wide post__content--green">
+						<div class="post__content-icon post__content-icon--big post__content-icon--green">
+							<div class="hotels-white-md"></div>
+						</div>
+						<div class="post__content-img">
+							<img src="img/posts/post__img-person_1.png" alt="">
+						</div>
+						<ul class="post-rating post-rating__content--wide">
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star-o"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star-o"></i></li>
+							<li class="post-rating__item"><span>(365)</span></li>
+						</ul>
+						<div class="post__content-name">4.0 Fair</div>
+						<div class="post__content-text">Ice machine with dirty ice. Discusting. - Key card failed 2nd day. - Asked front office <a class="post__content-link" href="#">...read more</a></div>
+					</div>
+				</div>
+
+				<div class="post post--small">
+					<div class="post__img">
+						<img src="img/posts/dc.jpg" alt="">
+						<span class="post__price post__price--violet">$118.47</span>
+						<div class="post__overlay post__overlay--violet">
+							<a class="post__overlay-link post__overlay-link--violet" href="#"><i class="icon-search"></i>show more</a>
+							<ul class="post-rating post-rating__overlay">
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><span><i class="post-rating__icon post-rating__icon--white icon-comments-o"></i></span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="post__content post__content--violet">
+						<div class="post__content-icon post__content-icon--small post__content-icon--violet">
+							<div class="bus-white-md"></div>												  
+						</div>
+						<div class="post__content-descr">Skagway Shore Excursion</div>
+						<div class="post__content-title post__content-title--violet">bus trans</div>
+						<ul class="post-rating">
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star-o"></i></li>
+							<li class="post-rating__item"><span>(565)</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="post post--big">
+					<div class="post__img">
+						<img src="img/posts/f8923b55_z.webp" alt="">
+						<div class="post__img-content">
+							<div class="post__content-title post__content-title--wide post__content-title--green">The Godfrey Hotel Chicago</div>
+						</div>
+						<div class="post__overlay post__overlay--green">
+							<a class="post__overlay-link post__overlay-link--green" href="#"><i class="icon-search"></i>show more</a>
+							<ul class="post-rating post-rating__overlay">
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><span><i class="post-rating__icon post-rating__icon--white icon-comments-o"></i></span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="post__content post__content--wide post__content--green">
+						<div class="post__content-icon post__content-icon--big post__content-icon--green">
+							<div class="hotels-white-md"></div>
+						</div>
+						<div class="post__content-img">
+							<img src="img/posts/post__img-person_1.png" alt="">
+						</div>
+						<ul class="post-rating post-rating__content--wide">
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star-o"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star-o"></i></li>
+							<li class="post-rating__item"><span>(365)</span></li>
+						</ul>
+						<div class="post__content-name">10.0 Exceptional</div>
+						<div class="post__content-text">I love this hotel. Great location. Rooms are spacious and comfortable. Beds and pillows <a class="post__content-link" href="#">...read more</a></div>
+					</div>
+				</div>
+
+				<div class="post post--small">
+					<div class="post__img">
+						<img src="img/posts/1f2db005_z.webp" alt="">
+						<span class="post__price post__price--green">$80</span>
+						<div class="post__overlay post__overlay--green">
+							<a class="post__overlay-link post__overlay-link--green" href="#"><i class="icon-search"></i>show more</a>
+							<ul class="post-rating post-rating__overlay">
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><span><i class="post-rating__icon post-rating__icon--white icon-comments-o"></i></span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="post__content post__content--green">
+						<div class="post__content-icon post__content-icon--small post__content-icon--green">
+							<div class="hotels-white-md"></div>
+						</div>
+						<div class="post__content-descr">Aliz Hotel Times Square</div>
+						<div class="post__content-title post__content-title--green">Vision Agency</div>
+						<ul class="post-rating">
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star-o"></i></li>
+							<li class="post-rating__item"><span>(1.067)</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="post post--small">
+					<div class="post__img">
+						<img src="img/posts/Top15FestivalsUSA_Pitchfork.jpg" alt="">
+						<span class="post__price post__price--orange">$3.990</span>
+						<div class="post__overlay post__overlay--orange">
+							<a class="post__overlay-link post__overlay-link--orange" href="#"><i class="icon-search"></i>show more</a>
+							<ul class="post-rating post-rating__overlay post-rating__overlay--orange">
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><span><i class="post-rating__icon post-rating__icon--white icon-comments-o"></i></span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="post__content post__content--orange">
+						<div class="post__content-icon post__content-icon--small post__content-icon--orange">
+							<div class="music-white-md"></div>												  
+						</div>
+						<div class="post__content-descr">Pitchfork Music Festival</div>
+						<div class="post__content-title post__content-title--orange">Union Park, Chicago</div>
+						<ul class="post-rating">
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star-o"></i></li>
+							<li class="post-rating__item"><span>(365)</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="post post--small">
+					<div class="post__img">
+						<img src="img/posts/7d.jpg" alt="">
+						<span class="post__price post__price--violet">$25.59</span>
+						<div class="post__overlay post__overlay--violet">
+							<a class="post__overlay-link post__overlay-link--violet" href="#"><i class="icon-search"></i>show more</a>
+							<ul class="post-rating post-rating__overlay">
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><span><i class="post-rating__icon post-rating__icon--white icon-comments-o"></i></span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="post__content post__content--violet">
+						<div class="post__content-icon post__content-icon--small post__content-icon--violet">
+							<div class="bus-white-md"></div>												  
+						</div>
+						<div class="post__content-descr">Best of Nashville City Tour</div>
+						<div class="post__content-title post__content-title--violet">bus trans</div>
+						<ul class="post-rating">
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star-o"></i></li>
+							<li class="post-rating__item"><span>(219)</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="post post--small">
+					<div class="post__img">
+						<img src="img/posts/4c.jpg" alt="">
+						<span class="post__price post__price--violet">$56.42</span>
+						<div class="post__overlay post__overlay--violet">
+							<a class="post__overlay-link post__overlay-link--violet" href="#"><i class="icon-search"></i>show more</a>
+							<ul class="post-rating post-rating__overlay">
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><span><i class="post-rating__icon post-rating__icon--white icon-comments-o"></i></span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="post__content post__content--violet">
+						<div class="post__content-icon post__content-icon--small post__content-icon--violet">
+							<div class="bus-white-md"></div>												  
+						</div>
+						<div class="post__content-descr">Nashville's Roofless Party Bus</div>
+						<div class="post__content-title post__content-title--violet">bus trans</div>
+						<ul class="post-rating">
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star-o"></i></li>
+							<li class="post-rating__item"><span>(303)</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="post post--small">
+					<div class="post__img">
+						<img src="img/posts/c64b3adc_z.webp" alt="">
+						<span class="post__price post__price--green">$79</span>
+						<div class="post__overlay post__overlay--green">
+							<a class="post__overlay-link post__overlay-link--green" href="#"><i class="icon-search"></i>show more</a>
+							<ul class="post-rating post-rating__overlay">
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><span><i class="post-rating__icon post-rating__icon--white icon-comments-o"></i></span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="post__content post__content--green">
+						<div class="post__content-icon post__content-icon--small post__content-icon--green">
+							<div class="hotels-white-md"></div>
+						</div>
+						<div class="post__content-descr">Four Points by Sheraton Midtown-Times Square</div>
+						<div class="post__content-title post__content-title--green">Reality Agency</div>
+						<ul class="post-rating">
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star-o"></i></li>
+							<li class="post-rating__item"><span>(797)</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="post post--big">
+					<div class="post__img">
+						<img src="img/posts/89d530eb_z.webp" alt="">
+						<div class="post__img-content">
+							<div class="post__content-title post__content-title--wide post__content-title--green">The Godfrey Hotel Chicago</div>
+						</div>
+						<div class="post__overlay post__overlay--green">
+							<a class="post__overlay-link post__overlay-link--green" href="#"><i class="icon-search"></i>show more</a>
+							<ul class="post-rating post-rating__overlay">
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><span><i class="post-rating__icon post-rating__icon--white icon-comments-o"></i></span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="post__content post__content--wide post__content--green">
+						<div class="post__content-icon post__content-icon--big post__content-icon--green">
+							<div class="hotels-white-md"></div>
+						</div>
+						<div class="post__content-img">
+							<img src="img/posts/post__img-person_1.png" alt="">
+						</div>
+						<ul class="post-rating post-rating__content--wide">
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star-o"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star-o"></i></li>
+							<li class="post-rating__item"><span>(365)</span></li>
+						</ul>
+						<div class="post__content-name">8.0 Very Good</div>
+						<div class="post__content-text">rooms only cleaned once a week. no hot water in sink. no plug in bathtub. had to go to front desk for <a class="post__content-link" href="#">...read more</a></div>
+					</div>
+				</div>
+
+				<div class="post post--small">
+					<div class="post__img">
+						<img src="img/posts/peak-to-peak-scenic-highway.jpg" alt="">
+						<span class="post__price post__price--violet">$87.18</span>
+						<div class="post__overlay post__overlay--violet">
+							<a class="post__overlay-link post__overlay-link--violet" href="#"><i class="icon-search"></i>show more</a>
+							<ul class="post-rating post-rating__overlay">
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><span><i class="post-rating__icon post-rating__icon--white icon-comments-o"></i></span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="post__content post__content--violet">
+						<div class="post__content-icon post__content-icon--small post__content-icon--violet">
+							<div class="bus-white-md"></div>												  
+						</div>
+						<div class="post__content-descr">Peak to Peak Scenic Byway</div>
+						<div class="post__content-title post__content-title--violet">bus trans</div>
+						<ul class="post-rating">
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star-o"></i></li>
+							<li class="post-rating__item"><span>(1,365)</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="post post--small">
+					<div class="post__img">
+						<img src="img/posts/72559671.jpg" alt="">
+						<span class="post__price post__price--orange">$3.990</span>
+						<div class="post__overlay post__overlay--orange">
+							<a class="post__overlay-link post__overlay-link--orange" href="#"><i class="icon-search"></i>show more</a>
+							<ul class="post-rating post-rating__overlay post-rating__overlay--orange">
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--white icon-star-o"></i></li>
+								<li class="post-rating__item"><span><i class="post-rating__icon post-rating__icon--white icon-comments-o"></i></span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="post__content post__content--orange">
+						<div class="post__content-icon post__content-icon--small post__content-icon--orange">
+							<div class="music-white-md"></div>												  
+						</div>
+						<div class="post__content-descr">Desert Daze Festival</div>
+						<div class="post__content-title post__content-title--orange">Moreno Beach, CA</div>
+						<ul class="post-rating">
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star"></i></li>
+							<li class="post-rating__item"><i class="post-rating__icon post-rating__icon--orange icon-star-o"></i></li>
+							<li class="post-rating__item"><span>(365)</span></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- container end -->
+		<div class="posts__btn">
+			<a class="posts__link" href="#">Load more</a><i class="posts__link-icon icon-long-arrow-right"></i>
+		</div>
+	</div>
+	<!-- posts end -->
+
+	<!-- offer -->
+	<section class="offer">
+		<div class="container">
+			<div class="offer__title">What can DuHoot offer to you?</div>
+			<div class="offer__subtitle">We're here to help you stay connected and move forward, together.</div>
+			<!-- offer-slider__dots -->
+			<div class="offer-slider__dots">
+				<div class="offer-slider__dots-box">
+					<div class="offer-slider__dots-item offer-slider__dots-item--green">
+						<div class="offer-slider__dots-icon hotels-gray-bg"></div>
+					</div>
+				</div>
+				<div class="offer-slider__dots-box">
+					<div class="offer-slider__dots-item offer-slider__dots-item--blue">
+						<div class="offer-slider__dots-icon education-gray-bg"></div>				 
+					</div>
+				</div>
+				<div class="offer-slider__dots-box">
+					<div class="offer-slider__dots-item offer-slider__dots-item--pink">
+						<div class="offer-slider__dots-icon community-gray-bg"></div>				 
+					</div>
+				</div>
+				<div class="offer-slider__dots-box">
+					<div class="offer-slider__dots-item offer-slider__dots-item--orange">
+						<div class="offer-slider__dots-icon music-gray-bg"></div>				 
+					</div>
+				</div>
+				<div class="offer-slider__dots-box">
+					<div class="offer-slider__dots-item offer-slider__dots-item--violet">
+						<div class="offer-slider__dots-icon bus-gray-bg"></div>				 
+					</div>
+				</div>
+
+			</div>
+			<!-- offer-slider__dots end -->
+			
+			<!-- offer-slider -->
+			<div class="offer-slider">
+				<div class="offer-slider__item">
+					<div class="offer-slider__title offer-slider__title--green">REALITY AGENCY</div>
+					<div class="offer-slider__item-inner">
+						<div class="offer-slider__item-column">
+							<div class="offer-slider__item-icon"><i class="icon icon--green icon-leaf"></i></div>
+							<div class="offer-slider__item-text">If you're looking for a place to get away, look no further than Rocky Boy's Agency. Whether you're planning to stay for a night or for the week, the area around Rocky Boy's Agency has accommodations to fit every need. Search for hotels in Rocky Boy's Agency with Hotels.com by checking our online map.</div>
+						</div>
+						<div class="offer-slider__item-column">
+							<div class="offer-slider__item-icon"><i class="icon icon--green icon-flash"></i></div>
+							<div class="offer-slider__item-text">Our map displays the areas and neighborhoods around all Rocky Boy's Agency hotels so you can see how close you are from landmarks and attractions, and then refine your search within the larger area. The best Rocky Boy's Agency hotel deals are here with our lowest price guarantee.</div>
+						</div>
+					</div>
+				</div>
+				<div class="offer-slider__item">
+					<div class="offer-slider__title offer-slider__title--blue">COMMUNICATIONS</div>
+					<div class="offer-slider__item-inner">
+						<div class="offer-slider__item-column">
+							<div class="offer-slider__item-icon"><i class="icon icon--blue icon-leaf"></i></div>
+							<div class="offer-slider__item-text">Great communication skills can be learned with Alison's free online Communication courses. While most people think that being able to express oneself effortlessly is an inherited skill, our training courses will prove otherwise.</div>
+						</div>
+						<div class="offer-slider__item-column">
+							<div class="offer-slider__item-icon"><i class="icon icon--blue icon-flash"></i></div>
+							<div class="offer-slider__item-text">Join our Introduction to Communication Skills classes so you can explore the basics of body language and the important contexts that affect communication.</div>
+						</div>
+					</div>
+				</div>
+				<div class="offer-slider__item">
+					<div class="offer-slider__title offer-slider__title--pink">EDUCATION</div>
+					<div class="offer-slider__item-inner">
+						<div class="offer-slider__item-column">
+							<div class="offer-slider__item-icon"><i class="icon icon--pink icon-leaf"></i></div>
+							<div class="offer-slider__item-text">Improve your knowledge of the English language and pronunciation and practice your speaking and vocabulary with our video lessons. Choose your English course level from the list below and start learning online today. Take any of our high quality online English lessons available 24/7 and improve your English speaking skills along with your grammar, reading and writing.</div>
+						</div>
+						<div class="offer-slider__item-column">
+							<div class="offer-slider__item-icon"><i class="icon icon--pink icon-flash"></i></div>
+							<div class="offer-slider__item-text">Change course at any time with our self-paced learning system. Your free Online English Course is ready for you now. No payment details required before or after registration.</div>
+						</div>
+					</div>
+				</div>
+				<div class="offer-slider__item">
+					<div class="offer-slider__title offer-slider__title--orange">MUSIC FESTIVALS</div>
+					<div class="offer-slider__item-inner">
+						<div class="offer-slider__item-column">
+							<div class="offer-slider__item-icon"><i class="icon icon--orange icon-leaf"></i></div>
+							<div class="offer-slider__item-text">Even if you kind of sort of hate music festivals, you can't help but love 'em. Where else can you spend a summer weekend seeing not one, not two, but a days-worth of live music from your favorite artists including both exciting, rising talents and some of the biggest acts today? so what are the must-see festivals this year in the US?</div>
+						</div>
+						<div class="offer-slider__item-column">
+							<div class="offer-slider__item-icon"><i class="icon icon--orange icon-flash"></i></div>
+							<div class="offer-slider__item-text">Here, you can to find our guide to the best 2020 music festivals, and who to see at each event. Continue to check back, as we'll keep updating this post as more lineups and dates are announced.</div>
+						</div>
+					</div>
+				</div>
+				<div class="offer-slider__item">
+					<div class="offer-slider__title offer-slider__title--violet">BUS TRANS</div>
+					<div class="offer-slider__item-inner">
+						<div class="offer-slider__item-column">
+							<div class="offer-slider__item-icon"><i class="icon icon--violet icon-leaf"></i></div>
+							<div class="offer-slider__item-text">Our motorcoach, rail, air and cruise guided tours are a wonderful way to explore different cultures, cuisines, and ways of life, in addition to creating new friendships. From one-day excursions on our bus tours, weekend getaways by train, to traveling across America by boat or plane, our experienced bus tour guides will make the vacation of your dreams a memorable and pleasant experience.</div>
+						</div>
+						<div class="offer-slider__item-column">
+							<div class="offer-slider__item-icon"><i class="icon icon--violet icon-flash"></i></div>
+							<div class="offer-slider__item-text">Our guided tours are not only affordable but also a once in a life time experience. Only a tour bus away from your dream destination, learn more about each city tour below and make sure to buy your ticket before they sell out!</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- offer-slider end -->
+		</div>
+	</section>
+	<!-- offer end  -->
+
+	<!-- footer -->
+	<footer class="footer bg">
+		<div class="bg__overlay">
+			<!-- container -->
+			<div class="container">
+
+				<!-- subscribe -->
+				<div class="subscribe">
+					<div class="subscribe__title">Subscribe to our newsletter</div>
+					<label class="subscribe__label">
+						<i class="subscribe__icon icon-envelope-o"></i>
+						<input class="subscribe__input" type="email" placeholder="your@email.com">
+						<button class="subscribe__btn btn" type="submit">subscribe</button>
+					</label>
+				</div>
+
+				<div class="line"></div>
+
+				<!-- subscribe end -->
+				<div class="footer__inner">
+					<!-- footer__column -->
+					<div class="footer__column">
+						<div class="footer__title">Category</div>
+						<ul class="footer__list">
+							<li class="footer__item"><a href="#" class="footer__link">Reality</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Living</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">EduCation</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Entertainment</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Mobility</a></li>
+						</ul>
+					</div>
+					<!-- footer__column end -->
+					<!-- footer__column -->
+					<div class="footer__column">
+						<div class="footer__title">Find it</div>
+						<ul class="footer__list">
+							<li class="footer__item"><a href="#" class="footer__link">bus trans</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">music</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">agency</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">contact</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">about us</a></li>
+						</ul>
+					</div>
+					<!-- footer__column end -->
+					<!-- footer__column -->
+					<div class="footer__column">
+						<!-- footer__links -->
+						<div class="footer__links">
+							<div class="footer__title">follow us</div>
+							<ul class="footer-follow__list">
+								<li class="footer-follow__item"><a href="#" class="footer-follow__link"><i class="icon icon-- icon-facebook-f"></i></a></li>
+								<li class="footer-follow__item"><a href="#" class="footer-follow__link"><i class="icon icon-- icon-twitter"></i></a></li>
+								<li class="footer-follow__item"><a href="#" class="footer-follow__link"><i class="icon icon-- icon-google-plus"></i></a></li>
+								<li class="footer-follow__item"><a href="#" class="footer-follow__link"><i class="icon icon-- icon-youtube"></i></a></li>
+							</ul>
+						</div>
+						<!-- footer__links end -->
+						<div class="footer-follow__copyright">Copyright © All Rights reserved</div>
+					</div>
+					<!-- footer__column end -->
+				</div>
+
+			</div>
+			<!-- container end -->
+		</div>
+	</footer>
+	<!-- footer end -->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+    window.jQuery || document.write('<script src="/js/jquery-3.4.1.min.js"><\/script>')
+	</script>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
