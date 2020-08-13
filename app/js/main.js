@@ -25,17 +25,7 @@ $(function(){
 	});
 
 
-	/***************** Login-form ********************/
-	$(".header-btn__login").click(function(event){
-		$(".login-form").toggleClass("active");
-		});
 
-	$(document).mouseup(function (e){ // событие клика по странице
-		if (!$(".header-btn__login").is(e.target) && // если клик сделан не по элементу
-				$(".login-form").has(e.target).length === 0) { // если клик сделан не по вложенным элементам
-				$(".login-form").removeClass('active'); // скрываем блок
-		}
-   });
 
 /***************** Search-form ********************/
   $(".header-btn__search").click(function(event){
@@ -51,4 +41,17 @@ $(function(){
 		}
   });
 	 
+});
+
+let user_icon = document.querySelector('.header-btn__icon-login');
+user_icon.addEventListener("click", function (e) {
+	let user_menu = document.querySelector('.login-form');
+	user_menu.classList.toggle('active');
+});
+
+document.documentElement.addEventListener("click", function (e) {
+	if (!e.target.closest('.login-btn')) {
+		let user_menu = document.querySelector('.login-form');
+		user_menu.classList.remove('active');
+	}
 });
